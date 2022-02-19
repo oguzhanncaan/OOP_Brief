@@ -9,11 +9,42 @@ public class Kedi {
     String tuyRengi;
 
 
+    public Kedi(String tur, String cins, int uzunluk, int agırlık, String tuyRengi) {
+        this.tur = tur;
+        this.cins = cins;
+        this.uzunluk = uzunluk;
+        this.agırlık = agırlık;
+        this.tuyRengi = tuyRengi;
+    }
+
+    @Override
+    public String toString() {
+
+        String result = "Kedi{" +
+                "tur='" + tur + '\'' +
+                ", cins='" + cins + '\'' +
+                ", uzunluk=" + uzunluk +
+                ", agırlık=" + agırlık +
+                ", tuyRengi='" + tuyRengi + '\'' +
+                '}';
+        System.out.println(result);
+        return result;
+    }
+
     /**
      * Constructor --> Yapıcı-Kurucu method
+     * Default --> parametresiz.
+     * 1- Sınıf adı ile aynı adı taşımalı
+     * 2- Geri dönüş tipi yazılmamalı. çünkü sınıfın kendisi döner.
      * @return
      */
 
+
+    public Kedi(int uzunluk,int agırlık){
+        // this --> bu sınıf demektir.
+        this.agırlık = agırlık;
+        this.uzunluk = uzunluk;
+    }
     public Kedi(){
         tur = "Siyah";
         agırlık = 200;

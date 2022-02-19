@@ -29,6 +29,10 @@ public class Runner {
         System.out.println("Kedi ağırlığı: " +kedi.getAgırlık());
         System.out.println("Kedi türü : " +kedi.getTur());
 
+        Kedi kedi1 = new Kedi("tür","cins", 5, 120,"sarı");
+
+        kedi1.toString();
+
 
 
     }
